@@ -1,6 +1,21 @@
 # ege-26
 ЕГЭ Информатика и ИКТ
 
+**Беляков Андрей Юрьевич**  
+
+---  
+
+> [Онлайн кабинет для занятий](https://bbb.psaa.ru/rooms/l2z-d0s-9am-bdi/join)  
+> [Доска для занятий](https://unidraw.io/app/board/2e41911c2fd0b43f4a5c?allow_guest=true)  
+
+Банки заданий:  
+
+- [ФИПИ ЕГЭ](https://ege.fipi.ru/bank/index.php?proj=B9ACA5BBB2E19E434CD6BEC25284C67F)  
+- [решу ЕГЭ](https://inf-ege.sdamgia.ru/)  
+- [школково](https://3.shkolkovo.online/catalog?SubjectId=30)  
+
+---  
+
 В 2026 г. файлы, необходимые для выполнения заданий, будут представлены в форматах:  
 
 №3, 9, 18, 22 → *.ods  
