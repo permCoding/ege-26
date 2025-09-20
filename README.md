@@ -17,6 +17,11 @@
 
 ---  
 
+[LibreOffice](https://www.libreoffice.org/download/download-libreoffice/)  
+
+
+---  
+
 [Демо-2026](https://4ege.ru/informatika/76077-demoversija-ege-2026-po-informatike.html)  
 
 В 2026 г. файлы, необходимые для выполнения заданий, будут представлены в форматах:  
