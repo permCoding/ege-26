@@ -10,6 +10,7 @@
 
 Банки заданий:  
 
+- [kompege](https://kompege.ru/)  
 - [ФИПИ ЕГЭ](https://ege.fipi.ru/bank/index.php?proj=B9ACA5BBB2E19E434CD6BEC25284C67F)  
 - [решу ЕГЭ](https://inf-ege.sdamgia.ru/)  
 - [школково](https://3.shkolkovo.online/catalog?SubjectId=30)  
