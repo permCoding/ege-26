@@ -24,8 +24,11 @@
 
 ---  
 
-[LibreOffice](https://www.libreoffice.org/download/download-libreoffice/)  
+Скачать и установить:  
 
+[LibreOffice](https://www.libreoffice.org/download/download-libreoffice/)  
+[Python](https://www.python.org/downloads/)  
+[VS Code](https://code.visualstudio.com/download)  
 
 ---  
 
