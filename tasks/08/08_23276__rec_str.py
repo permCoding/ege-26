@@ -1,10 +1,22 @@
-from itertools import product as p
+def p():
+    def generate(current):
+        if len(current) < 5:  # кол-во букв
+            for letter in 'АКОРСТ':
+                current += letter
+                generate(current)
+                current = current[:-1]  # убрали посл букву чтобы на след итерации доавить следующую
+        else:
+            words.append(current[:])
+    
+    words = []
+    generate('')
+    return words
 
 
 i, last = 0, 0
-for w in p('АКОРСТ', repeat=5):
+for w in p():
     i += 1
-    if w[0] != 'А' and w.count('С') == 1:
+    if i%2==1 and w[0] != 'А' and w.count('С') == 1:
         last = i
 print(last)  # 7775
 

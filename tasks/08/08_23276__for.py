@@ -1,5 +1,5 @@
 def p():
-    letters = ['А', 'К', 'О', 'Р', 'С', 'Т']
+    letters = 'АКОРСТ'
     words = []
     for a in letters:
         for b in letters:
@@ -13,7 +13,7 @@ def p():
 i, last = 0, 0
 for w in p():
     i += 1
-    if w[0] != 'А' and w.count('С') == 1:
+    if i%2==1 and w[0] != 'А' and w.count('С') == 1:
         last = i
 print(last)  # 7775
 
