@@ -5,5 +5,5 @@ def f(x, a):
 
 for a in range(1, 999):
     if all(f(x, a) for x in range(1, 999)):
-        print(a)
+        print(a)  # 4
         break
