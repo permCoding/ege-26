@@ -1,24 +1,29 @@
+import re
+
 s = open('./23228.txt').readline().strip().replace('2025','*')
 
-len_min = len(s)
-l = 0
-while l < len(s):
-    if s[l] == '*':
-        cnt_2025 = 1
-        r = l + 1
-        while r < len(s):
-            if s[r] == '*':
-                cnt_2025 += 1
-                if cnt_2025 == 60:
-                    substr = s[l:r+1]
-                    if substr.count('Y') >= 120:
-                        len_min = min(len_min, len(substr) + 3*cnt_2025)
-                        print(len_min, l, r)
-                if cnt_2025 > 60: break
-            r += 1
-    l += 1
-    
-print(len_min)  # 3190
+# ver 1
+# lst_left = [-1]
+# while s.find('*', lst_left[-1]+1) > -1:
+#     lst_left.append(s.find('*', lst_left[-1]+1))
+# lst_left = lst_left[1:]
+
+# ver 2
+# lst_left = []
+# pos = -1
+# while s.find('*', pos+1) > -1:
+#     pos = s.find('*', pos+1)
+#     lst_left += [pos]
+
+# ver 3
+lst_left = [m.start() for m in re.finditer(r'\*', s)]
+
+pairs = [(lst_left[i],lst_left[i+59]) for i in range(len(lst_left)-59)]
+
+for pair in pairs:
+    substr = s[pair[0]:pair[1]+1]
+    if substr.count('Y') >= 120:
+        print(substr.count('*'), pair, len(substr) + 3*60)
 
 """ 3190
 состоит из десятичных цифр и заглавных букв латинского алфавита
