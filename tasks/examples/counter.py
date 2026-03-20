@@ -13,6 +13,10 @@ print(ctr.most_common(1))
 print(ctr.most_common(2))
 print(ctr.most_common(3))
 
+print(''.join(sorted(ctr.elements())))
+print(list(ctr.values()))
+print(list(ctr.keys()))
+
 pairs = [(key, dct[key]) for key in dct.keys()]
 tpl = sorted(pairs, key=lambda x: x[1], reverse=True)  # сортировка по второму элементу кортежа
 print(tpl)
