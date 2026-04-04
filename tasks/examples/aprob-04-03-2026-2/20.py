@@ -8,12 +8,12 @@ def f(a, b, h):
         f(a*2,b,h),
         f(a,b*2,h)
     ]
-    if h == 2:
-        return all(t)
-    else:
-        return any(t)
+    if h == 2:  # Ваня
+        return all(t)  # при любой игре Вани
+    else:       # Петя
+        return any(t)  # есть ход Пети
 
 
 for s in range(1, 190):
-    if f(17, s, 0) and not(f(17,s,2)):
+    if f(17, s, 0) and not(f(17,s,2)):  # Петя не может за 1 ход
         print(s)  # 86 94

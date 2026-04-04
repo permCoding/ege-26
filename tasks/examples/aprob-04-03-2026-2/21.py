@@ -8,10 +8,10 @@ def f(a, b, h):
         f(a*2,b,h),
         f(a,b*2,h)
     ]
-    if h in [2,4]:
-        return any(t)
-    else:
-        return all(t)
+    if h in [2,4]:     # Ваня
+        return any(t)  # есть ход Вани
+    else:              # Петя
+        return all(t)  # при любой игре Пети
 
 
 for s in range(1, 190):
