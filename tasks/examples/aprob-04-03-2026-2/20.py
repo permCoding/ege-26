@@ -1,6 +1,6 @@
 def f(a, b, h):
     if a+b >= 207: return h == 3
-    if h > 3: return False
+    if h == 3: return False
     h += 1
     t = [
         f(a+1,b,h),

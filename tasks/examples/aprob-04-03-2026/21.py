@@ -1,6 +1,6 @@
 def f(a, b, h):
     if a+b >= 211: return h in [2,4]
-    if h > 4: return False
+    if h == 4: return False
     h += 1
     t = [
         f(a+1,b,h),
@@ -9,9 +9,9 @@ def f(a, b, h):
         f(a,b*2,h)
     ]
     if h in [2,4]:
-        return any(t)
+        return any(t)  # найдётся ход Вани
     else:
-        return all(t)
+        return all(t)  # при любом ходе Пети
 
 
 for s in range(1, 190):
