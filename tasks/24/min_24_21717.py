@@ -9,7 +9,7 @@ for r in range(2,len(s)):
         mn = min(mn, r-l+1)
         if s[l:l+3] == 'RSQ': cnt -= 1
         l += 1
-print(mn)
+print(mn)  # 497
 
 """
 способ с подменой НЕ подходит

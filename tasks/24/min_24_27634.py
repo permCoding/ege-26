@@ -11,5 +11,5 @@ for r in range(len(s)):
             if s[l] == 'Z': cnt -= 1
             l += 1
 
-print(mn)
+print(mn)  # 1058
         
