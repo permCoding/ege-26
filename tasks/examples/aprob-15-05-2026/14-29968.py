@@ -1,0 +1,9 @@
+for x in range(3000, 0, -1):
+    v = 9*11**210 + 8*11**150 - x
+    cnt = 0
+    while v > 0:
+        if v % 11 == 0: cnt += 1
+        v //= 11
+    if cnt == 60:
+        print(x)  # 2992
+        break
