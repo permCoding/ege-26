@@ -1,25 +1,31 @@
 s = open('./24_28943.txt').readline()
-# s = 'PA20EZ8TXTFZCZ220IS20QRD'  # 20
 
-amount = 26  # 26 !-!-!-!-!-!-!-!-!-!-!-!_____________________26
-cnt, min_len = 0, 10**9
-l, g = 0, 0
-for r in range(len(s)-1):
-    if s[r:r+2] == '20': cnt += 1
-    if s[r] in 'AEIOUY': g += 1
-    if cnt == amount:
-        while s[l:l+2] != '20': 
-            if s[l] in 'AEIOUY': g -= 1
-            l += 1
-        if s[r+1] in 'AEIOUY' and g == 1: 
-            # print(s[l:r+2], len(s[l:r+2]), r+2-l, g)
-            min_len = min(min_len, r-l+2)
-    # while cnt > amount:
-    #     if s[l:l+2] == '20':
-    #         cnt -= 1
-    #     l += 1
-        
-print(min_len)
+ss = ''
+mn = 10**12
+for r in range(len(s)):
+    ss += s[r]
+    if ss[-1] in 'AEIOUY':
+        while ss.count('20') >= 26:
+            if ss.count('20') == 26:
+                mn = min(mn, len(ss))
+            ss = ss[1:]
+        ss = ''
+print(mn)
+
+
+s = s[::-1]
+p = [i for i in range(len(s)) if s[i] in 'AEIOUY']
+p.append(10**12)  # позиции гласных + одна для посл сравн
+
+mn = 10**12
+for i in range(1, len(p)):
+    l,r = p[i-1],p[i]
+    while s[l:r+1].count('02') >= 26:
+        if s[l:r+1].count('02') == 26:
+            mn = min(mn, r-l+1)
+        r -= 1
+print(mn)  # 58
+
 
 '''
 Текстовый файл состоит из десятичных цифр и заглавных букв латинского алфавита. 

@@ -55,7 +55,10 @@ def solve_3(s, amount=26):
 s = open('./24_28943.txt').readline()
 # s = 'PA20KZ8T220IS20D'  # 20
 for c in 'EIOUY': s = s.replace(c, 'A')
-solve_2(s)
+
+solve_1(s)  # 58
+# solve_2(s)  # 58
+# solve_3(s)  # 58
 
 '''
 Текстовый файл состоит из десятичных цифр и заглавных букв латинского алфавита. 
