@@ -22,6 +22,7 @@ for i in range(1, len(p)):
     l,r = p[i-1],p[i]
     while s[l:r+1].count('02') >= 26:
         if s[l:r+1].count('02') == 26:
+# если вынести условие то потер реш при s[r-1:r+1] == '02'
             mn = min(mn, r-l+1)
         r -= 1
 print(mn)  # 58
