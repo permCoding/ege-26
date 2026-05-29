@@ -26,4 +26,4 @@ for e in nt:
             mx_pr = e[1]
             mx_art = e[0]
 print(mx_k, mx_art, mx_pr, mx_k*mx_pr)
-    
+# 43656 36
