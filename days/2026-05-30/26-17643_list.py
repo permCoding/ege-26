@@ -11,11 +11,10 @@ for e in d:
         dct[e[0]] = [pr, cnt_pr+1, cnt_npr]
     else:
         dct[e[0]] = [pr, cnt_pr, cnt_npr+1]
-
 lst = [[art]+val for art, val in dct.items()]
-lst.sort(key=lambda x: (-x[2], -x[1], x[3]))
-r = lst[0]
-print(r[1]*r[2], r[3])
+
+r = sorted(lst, key=lambda x: (-x[2], -x[1], x[3]))[0]
+print(r[1]*r[2], r[3])  # 43656 36
 
 """ lp = 46481 36
 Если и таких товаров несколько, лидер продаж — 
